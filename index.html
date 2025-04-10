@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment| Enhancing Content and Building Forms</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Week 2 Assignment: Enhancing Content and Building Forms</h1>
+    <p>To do list</p>
+    <ol type="I">
+        <li>Take the kids to school</li>
+        <li>Go for grocery shopping</li>
+        <li>Pick up clothes from the dry cleaners</li>
+        <li>Pick the kids from school</li>
+        <li>Make dinner</li>
+    </ol>
+    <p>Adding external images</p>
+    <img src="https://images.pexels.com/photos/30890467/pexels-photo-30890467/free-photo-of-romantic-couple-enjoying-beachfront-scenery.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Romantic Couple Enjoying Beachfront Scenery">
+    <p>Creating Tables in HTML: Contact Table</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Amy Mudamba</td>
+            <td>Riara rd, Nairobi</td>
+            <td>+254 718 657 990</td>
+            <td>amudamba@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>John Kinyanjui</td>
+            <td>Lake basin, Kisumu</td>
+            <td>+254 726 579 451</td>
+            <td>kinyanjuijohn@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>Vancouver, British Colombia</td>
+            <td>+1 (896) 25556</td>
+            <td>michael.johnson@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Evans Agini</td>
+            <td>Lawrence, Kansas</td>
+            <td>+1 (555) 456-7890</td>
+            <td>aginie@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Daniella Wilson</td>
+            <td>Kitusuru, Nairobi</td>
+            <td>(555) 567-8901</td>
+            <td>daniella.w@outlook.com</td>
+        </tr>
+    </table>
+
+    <p>Registration form</p>
+    <form action="#" method="post">
+        <!-- Name Field -->
+    <label for="name">Name <span style="color: red;">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <!-- Email Field -->
+    <label for="email">Email <span style="color: red;">*</span></label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Password Field -->
+    <label for="password">Password <span style="color: red;">*</span></label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <!-- Date Field -->
+    <label for="dob">Date of Birth <span style="color: red;">*</span></label>
+    <input type="date" id="dob" name="dob" required>
+
+    <!-- Dropdown Field -->
+    <label for="country">Country <span style="color: red;">*</span></label>
+    <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <label>Gender <span style="color: red;">*</span></label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+    </div>
+
+    <!-- Checkboxes -->
+    <label>Interests</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+        <label><input type="checkbox" name="interests" value="music"> Music</label>
+        <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+        <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+    </div>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+    </form>
+</body>
+</html>
