@@ -1,0 +1,38 @@
+/* Style for the body */
+body {
+    font-family: 'Arial', sans-serif; /* Different font */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header with an ID */
+#header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the text */
+}
+
+/* Style for a class */
+.content {
+    margin: 20px; /* Margin around the content */
+    padding: 15px; /* Padding inside the content */
+    border: 1px solid #ccc; /* Light gray border */
+    background-color: white; /* White background for content */
+}
+
+/* Style for images */
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Style for a footer with a class */
+.footer {
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding around the footer */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+}
